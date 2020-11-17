@@ -135,9 +135,9 @@ To summarize, we will be building the below components for you to follow along:
 The SSH key-pair files defined here will be used in the Terraform to connect to the EC2 instances with this credential. Intentionally, all components use the same certificate  for ease of use, but you can have different ones if required.
 
 ```sh
-$ ssh-keygen -t rsa -b 2048 -f ~/.ssh/MyKeyPair.pem -q -P ''
-$ chmod 400 ~/.ssh/MyKeyPair.pem
-$ ssh-keygen -y -f ~/.ssh/MyKeyPair.pem > ~/.ssh/MyKeyPair.pub
+$ ssh-keygen -t rsa -b 2048 -f ~/.ssh/udemy.pem -q -P ''
+$ chmod 400 ~/.ssh/udemy.pem
+$ ssh-keygen -y -f ~/.ssh/udemy.pem > ~/.ssh/udemy.pub
 ```
 
 All the moving parts pertinent to the configuration are now settled for us to get started with the implementation.
